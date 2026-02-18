@@ -1,4 +1,4 @@
-//import  CartContext  from "../context/CartContext";
+import  CartContext  from "../context/CartContext";
 import {
   Minus,
   Plus,
@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Button from "react-bootstrap/Button";
 import Spinner from "../lib/spinner";
+
 
 export default function Cart() {
   const { cart, loading, updateQuantity, removeItem, checkout } = useContext(CartContext);;
